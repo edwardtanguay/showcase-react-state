@@ -17,6 +17,10 @@ h1 {
 	font-variant: small-caps;
 }
 
+button.disabled {
+	opacity: 0.5;
+	background-color: #777;
+}
 
 a.active {
 	color: rgb(232, 232, 141);
