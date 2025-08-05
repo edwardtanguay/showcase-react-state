@@ -4,8 +4,9 @@
 
 @layer base {
 	button {
-		@apply px-4 py-2 bg-slate-300;
+		@apply px-5 py-2.5 bg-blue-600 text-white font-medium rounded-lg shadow-sm hover:bg-blue-700;
 	}
+
 
 	h2 {
 		@apply text-2xl font-bold bg-slate-200 mb-3 py-1 px-2 border border-slate-700 rounded-lg;
