@@ -9,6 +9,13 @@ export const PageWelcome = () => {
 		setThePassword(value);
 	};
 
+	const handleLoginButton = () => {
+		if (thePassword === "fantastic") {
+			setIsOnline(true);
+			setThePassword("");
+		}
+	};
+
 	return (
 		<>
 			<div className="example">
@@ -27,7 +34,7 @@ export const PageWelcome = () => {
 						<>
 							<p className="text-xl">Password:</p>
 							<input type="password" value={thePassword} className="border border-slate-300 rounded-md px-2 py-1" onChange={handleChangePassword} />
-							<button className={`${thePassword.length < 8 ? 'disabled' : ''}`} onClick={() => alert("clicked")} disabled={thePassword.length < 8}>Login</button>
+							<button className={`${thePassword.length < 8 ? 'disabled' : ''}`} onClick={handleLoginButton} disabled={thePassword.length < 8}>Login</button>
 						</>
 					)}
 				</div>
