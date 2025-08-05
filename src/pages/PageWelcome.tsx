@@ -7,8 +7,8 @@ export const PageWelcome = () => {
 		<>
 			<h2>Example 1</h2>
 			<div className="flex gap-2 items-center">
-				<button>Change online status</button>
-				<p className="text-xl">User is offline.</p>
+				<button onClick={() => setIsOnline(!isOnline)}>Change online status</button>
+				<p className="text-xl">User is {isOnline ? "online" : "offline"}.</p>
 			</div>
 		</>
 	)
